@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       body: ListView.builder(
         itemCount: 5,
         itemBuilder: (BuildContext context, int index) {
-          return PostCard();
+          return const PostCard();
         },
       ),
     );
