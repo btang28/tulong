@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tulong/pages/home_page.dart';
+import 'package:tulong/view/pages/home_page.dart';
 
 void main() {
   runApp(const Tulong());
