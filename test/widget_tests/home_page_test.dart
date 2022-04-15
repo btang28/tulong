@@ -4,7 +4,7 @@ import 'package:tulong/view/pages/home_page.dart';
 
 void main() {
   testWidgets("Testing HomePage widget", (WidgetTester tester) async {
-    await tester.pumpWidget(MaterialApp(home: HomePage()));
+    await tester.pumpWidget(const MaterialApp(home: HomePage()));
 
     // Test: Scaffold widget
     expect(find.byType(Scaffold), findsOneWidget);

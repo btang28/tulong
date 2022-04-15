@@ -16,7 +16,7 @@ class Tulong extends StatelessWidget {
         primarySwatch: Colors.green,
         brightness: Brightness.light,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

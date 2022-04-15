@@ -5,7 +5,7 @@ import 'package:tulong/view/pages/home_page.dart';
 
 void main() {
   testWidgets("Testing Leaf widget", (WidgetTester tester) async {
-    await tester.pumpWidget(Tulong());
+    await tester.pumpWidget(const Tulong());
 
     // Test: MaterialApp widget presence
     expect(find.byType(MaterialApp), findsOneWidget);
