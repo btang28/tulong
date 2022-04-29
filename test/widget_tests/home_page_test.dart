@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tulong/view/pages/home_page.dart';
+import 'package:tulong/view/widgets/post_card.dart';
 
 void main() {
   testWidgets("Testing HomePage widget", (WidgetTester tester) async {
@@ -12,13 +13,14 @@ void main() {
     // Test: AppBar widget
     expect(find.byType(AppBar), findsOneWidget);
 
-    // // Test: 2 Text widgets
-    // expect(find.byType(Text), findsNWidgets(2));
-
     // Test: "Tulong" text
     expect(find.text("Tulong"), findsOneWidget);
 
-    // // Test: "Hello world!" text
-    // expect(find.text("Hello world!"), findsOneWidget);
+    // Test: ListView presence
+    expect(find.byType(ListView), findsOneWidget);
+
+    // Test: PostCard presence
+    expect(find.byType(PostCard), findsWidgets);
+
   });
 }
