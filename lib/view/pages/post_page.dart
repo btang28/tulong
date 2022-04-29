@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tulong/model/post_model.dart';
 
 class PostPage extends StatelessWidget {
-  late final PostModel postData;
+  const PostPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return const Scaffold(

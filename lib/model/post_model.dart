@@ -1,7 +1,4 @@
-
-import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-// import 'package:tulong/model/comment_model.dart';
 import 'package:tulong/model/user_model.dart';
 
 class PostModel {
@@ -9,7 +6,6 @@ class PostModel {
   final DateTime postTime;
   final int reacts, views;
   final UserModel author;
-  // final List<CommentModel> comments;
 
   const PostModel({
     required this.id,
@@ -21,7 +17,6 @@ class PostModel {
     required this.postTime,
     required this.reacts,
     required this.views,
-    // required this.comments,
   });
 
   String get postTimeFormatted => DateFormat.yMMMMEEEEd().format(postTime);
